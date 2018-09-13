@@ -1,16 +1,61 @@
+@charset "utf-8";
+html {
+	margin: 2%;
+}
 body {
-	background-color: RGB
+	background-color: RGB(207, 252, 252);
+	margin: auto;
+	max-width: 860px;
+}
+header {
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+nav {
+	margin-top: 1em;
+	border-top: 2px solid RGB(0, 0, 0);
+	border-bottom: 2px solid RGB(0, 0, 0);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+footer {
+	margin-top: 3em;
+	text-align: right;
+	padding-top: 1.5em;
+	border-top: 2px solid RGB(0, 0, 0);
+	width: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-style: italic;
 	font-weight: bold;
 	font-family: monospace;
+	color: #000000;
 }
-p {
+p, a {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 1.2em;
 	font-family: Arial, Helvetica, sans-serif;
+}
+p {
+	color: #000000;
+}
+.logo {
+	width: 200px;
+	height: 170px;
+}
+header > a {
+	margin-right: 30px;
+}
+header > h1 {
+	font-size: 500%;
+}
+nav > a {
+	padding-left: 3em;
+	padding-right: 3em;
 }
 /* De flesta webbläsare blockar många deklarationer under a:visited.
 Bland annat text-decoration. */
