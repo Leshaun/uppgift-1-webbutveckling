@@ -1,3 +1,20 @@
 body {
-	background-color: RGB(0, 0, 0);
+	background-color: RGB
+}
+h1, h2, h3, h4, h5, h6 {
+	font-style: italic;
+	font-weight: bold;
+	font-family: monospace;
+}
+p {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.2em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* De flesta webbläsare blockar många deklarationer under a:visited.
+Bland annat text-decoration. */
+a:visited, a:active {
+	color: red;
+	text-decoration: none;
 }
