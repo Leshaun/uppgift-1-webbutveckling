@@ -15,11 +15,16 @@ header {
 }
 nav {
 	margin-top: 1em;
+	margin-bottom: 1.5em;
 	border-top: 2px solid RGB(0, 0, 0);
 	border-bottom: 2px solid RGB(0, 0, 0);
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
+}
+section {
+	max-width: 600px;
+	margin: auto;
 }
 footer {
 	margin-top: 3em;
@@ -34,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: monospace;
 	color: #000000;
 }
-p, a {
+p, a, li {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 1.2em;
@@ -42,7 +47,14 @@ p, a {
 }
 p {
 	color: #000000;
+	line-height: normal;
+	margin: 0 0 12px 0;
 }
+h2 {
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 1.5em;
+}	
 .logo {
 	width: 200px;
 	height: 170px;
@@ -51,11 +63,7 @@ header > a {
 	margin-right: 30px;
 }
 header > h1 {
-	font-size: 500%;
-}
-nav > a {
-	padding-left: 3em;
-	padding-right: 3em;
+	font-size: 5em;
 }
 /* De flesta webbläsare blockar många deklarationer under a:visited.
 Bland annat text-decoration. */
