@@ -1,43 +1,44 @@
 @charset "utf-8";
 html {
-	margin: 2%;
+	margin: 0;
 }
 body {
-	background-color: RGB(207, 252, 252);
-	margin: auto;
-	max-width: 860px;
+	background-color: rgb(0, 92, 149);
+	margin: 0;
 }
 header {
-	text-align: center;
+	padding-top: 0.5em;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 nav {
-	margin-top: 1em;
-	margin-bottom: 1.5em;
-	border-top: 2px solid RGB(0, 0, 0);
-	border-bottom: 2px solid RGB(0, 0, 0);
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	border-top: 2px solid rgb(226, 248, 255);
+	background-color: rgb(255, 170, 253);
 }
 section {
-	max-width: 600px;
-	margin: auto;
+	padding-bottom: 1.5em;
+	padding-top: 1em;
+	background-color: rgb(226, 248, 255);
+	min-height: 70vh;
 }
 footer {
-	margin-top: 3em;
 	text-align: right;
-	padding-top: 1.5em;
-	border-top: 2px solid RGB(0, 0, 0);
-	width: 100%;
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+	padding-right: 0.5em;
+	max-width: 70%;
+	margin: auto;
+	color: #ffffff;
+}
+header {
+	max-width: 70%;
+	margin: auto;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-style: italic;
 	font-weight: bold;
 	font-family: monospace;
-	color: #000000;
 }
 p, a, li {
 	font-style: normal;
@@ -48,22 +49,66 @@ p, a, li {
 p {
 	color: #000000;
 	line-height: normal;
-	margin: 0 0 12px 0;
+	margin: 0 0 2% 0;
 }
 h2 {
-	font-size: 2em;
+	font-size: 2.5em;
 	text-align: center;
 	margin-bottom: 1.5em;
-}	
+}
+h3 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+ul { 
+	margin: 0 0 2% 0;
+}
 .logo {
-	width: 200px;
-	height: 170px;
+	width: 100px;
+	height: 91px;
+}
+.options {
+	max-width: 70%;
+	margin: auto;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.textcontainer {
+	max-width: 80%;
+	margin: auto;
+	padding-bottom: 1.5em;
+}
+.flexcontainerouter {
+	display: flex;
+	flex-direction: column;
+}
+.flexcontainerinner {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding-bottom: 2em;
+	justify-content: center;
+}
+.imgtext {
+	max-width: 75%;
+	margin: 0 0 0 1em;
 }
 header > a {
-	margin-right: 30px;
+	margin-right: 3.5%;
 }
 header > h1 {
-	font-size: 5em;
+	font-size: 3em;
+	color: #ffffff;
+}
+li > a {
+	font-size: 100%;
+}
+.flexcontainerouter img {
+	width: 200px;
+	height: 200px;
 }
 /* De flesta webbläsare blockar många deklarationer under a:visited.
 Bland annat text-decoration. */
